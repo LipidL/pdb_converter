@@ -113,8 +113,8 @@ pub fn print_to_file(atoms: Vec<Atom>, filename: &str){
 fn main() {
     // command line argument: -f <filename> -o <output>
     let args: Vec<String> = std::env::args().collect();
-    let mut filename = "";
-    let mut output = "";
+    let mut filename = "input.pdb";
+    let mut output = "output.pdb";
     for i in 0..args.len(){
         if args[i] == "-f"{
             filename = &args[i+1];
